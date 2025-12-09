@@ -1,7 +1,17 @@
 [project]
 name = "scanner-app"
-version = "0.1.0"
-description = "Add your description here"
-readme = "README.md"
-requires-python = ">=3.10"
-dependencies = []
+version = "1.0.0"
+description = "Scanner Application for HP Deskjet 2130"
+requires-python = ">=3.8"
+dependencies = [
+    "pillow>=10.0.0",
+    "reportlab>=4.0.0",
+    "pywin32>=305",
+    "wmi>=1.5.1",
+    "pysimplegui>=5.0.8.3",
+    "comtypes>=1.4.12",
+]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
